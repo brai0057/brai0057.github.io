@@ -4,25 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Star Media - Final Project</title>
-
-  <!-- Stylesheet will be added later -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- =========================
-       HEADER + NAVIGATION
+       HEADER
   ========================== -->
   <header>
-    
-    <!-- LOGO PLACEHOLDER -->
     <div class="logo">
       <img src="images/logo.png" alt="Three Star Media Logo">
     </div>
 
-    <!-- DESKTOP NAVIGATION -->
-    <!-- Visible on desktop only -->
     <nav class="desktop-nav">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -32,166 +26,170 @@
         <li><a href="#contact">Contact Us</a></li>
         <li>
           <form class="search-form">
-            <input type="text" placeholder="Search">
+            <label for="search" class="visually-hidden">Search</label>
+            <input id="search" type="text" placeholder="Search">
             <button type="submit">🔍</button>
           </form>
         </li>
       </ul>
     </nav>
-
   </header>
 
-
   <!-- =========================
-       BANNER / HERO SECTION
+            MAIN CONTENT
   ========================== -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Welcome to Three Star Media</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec risus ac velit.</p>
-      <a href="#contact" class="btn">Contact Us</a>
-      <img src="images/main-banner.jpg" alt="main-banner">
-    </div>
-  </section>
+  <main>
 
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Welcome to Three Star Media</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+        <img src="images/main-banner.jpg" alt="Main banner image">
+      </div>
+    </section>
 
-  <!-- =========================
-          ABOUT SECTION
-  ========================== -->
-  <section class="about" id="about">
-    <h1>About Us</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fuga. Dicta deleniti repellat
-      placeat cupiditate sapiente recusandae nihil laborum!</p>
-    <img src="images/about-us.jpg" alt="Office Environment">
-  </section>
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <img src="images/about-us.jpg" alt="Office Environment">
 
+      <h2>About Us</h2>
 
-  <!-- =========================
-         SERVICES SECTION
-  ========================== -->
-  <section class="services" id="services">
-    <h1>Our Services</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fuga. Dicta deleniti repellat
+        placeat sapiente recusandae nihil laborum.</p>
 
-    <div class="service-cards">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eius! Tenetur accusantium quidem
+        provident earum soluta atque voluptate.</p>
+    </section>
 
-      <!-- Card 1 -->
-      <article class="service-card">
-        <img src="images/digital.jpg" alt="Service One">
-        <h3>Digital Transformation</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Learn More</a>
-      </article>
-  
-      <!-- Card 2 -->
-      <article class="service-card">
-        <img src="images/marketing.jpg" alt="Service Two">
-        <h3>Marketing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Learn More</a>
-      </article>
+    <!-- HOURS OF OPERATION -->
+    <section class="hours">
+      <h2>Hours of Operation</h2>
 
-      <!-- Card 3 -->
-      <article class="service-card">
-        <img src="images/video.jpg" alt="Service Three">
-        <h3>Video Production</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Learn More</a>
-      </article>
+      <table>
+        <thead>
+          <tr>
+            <th>Days</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday – Friday</td><td>9 AM – 6 PM</td></tr>
+          <tr><td>Saturday</td><td>10 AM – 4 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-      <!-- Card 4 -->
-      <article class="service-card">
-        <img src="images/web.jpg" alt="Service One">
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Learn More</a>
-      </article>
-  
-      <!-- Card 5 -->
-      <article class="service-card">
-        <img src="images/print.jpg" alt="Service One">
-        <h3>Print</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Learn More</a>
-      </article>
-  
-      
-    </div>
-  </section>
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2>Our Services</h2>
 
+      <div class="service-cards">
 
-  <!-- =========================
-          OUR VISION
-  ========================== -->
-  <section class="about" id="about">
-    <h2>Our Vision</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fuga. Dicta deleniti repellat
-      placeat cupiditate sapiente recusandae nihil laborum!</p>
-    <img src="images/about-us.jpg" alt="Office Environment">
-  </section>
+        <article class="service-card">
+          <img src="images/digital.jpg" alt="Digital Transformation">
+          <h3>Digital Transformation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
 
+        <article class="service-card">
+          <img src="images/marketing.jpg" alt="Marketing">
+          <h3>Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
 
-  <!-- =========================
-            TEAM SECTION
-  ========================== -->
-  <section class="team" id="team">
-    <h1>Our Team</h1>
+        <article class="service-card">
+          <img src="images/video.jpg" alt="Video Production">
+          <h3>Video Production</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
 
-    <div class="team-members">
-      <article class="team-member">
-        <img src="images/john.jpg" alt="John Doe">
-        <h3>John Doe</h3>
-        <h4>CEO and Co-owner</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-      </article>
+        <article class="service-card">
+          <img src="images/web.jpg" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
 
-      <article class="team-member">
-        <img src="images/bob.jpg" alt="Jane Smith">
-        <h3>Bob Rite</h3>
-        <h4>CFO and Co-owner</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-      </article>
-    </div>
+        <article class="service-card">
+          <img src="images/print.jpg" alt="Print Services">
+          <h3>Print</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
 
-  </section>
+      </div>
+    </section>
 
+    <!-- VISION -->
+    <section class="vision">
+      <h2>Our Vision</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <img src="images/about-us.jpg" alt="Vision Image">
+    </section>
 
-  <!-- =========================
-         CONTACT SECTION
-  ========================== -->
-  <section class="contact" id="contact">
-    <h1>Contact Us</h1>
+    <!-- TEAM -->
+    <section class="team" id="team">
+      <h2>Our Team</h2>
 
-    <form class="contact-form">
-      <label>Full Name</label>
-      <input type="text" required>
+      <div class="team-members">
 
-      <label>Email</label>
-      <input type="email" required>
+        <article class="team-member">
+          <img src="images/john.jpg" alt="John Doe">
+          <div class="team-info">
+            <h3>John Doe</h3>
+            <h4>CEO & Co-owner</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </article>
 
-      <label>Message</label>
-      <textarea required></textarea>
+        <article class="team-member">
+          <img src="images/bob.jpg" alt="Bob Rite">
+          <div class="team-info">
+            <h3>Bob Rite</h3>
+            <h4>CFO & Co-owner</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </article>
 
-      <button type="submit" class="btn">Send</button>
-    </form>
+      </div>
+    </section>
 
-    <div class="contact-map" style="width: 300px; height: 200px; border: 1px solid #ccc; overflow: hidden;">
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2>Send Us a Message</h2>
+
+      <form class="contact-form">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+
       <h3>Location</h3>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.312192243479!2d-75.73464818449701!3d45.35793957910017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce059de904efbd%3A0x3efb9f466fd57986!2sAlgonquin%20College%20-%20Woodroffe%20Campus!5e0!3m2!1sen!2sca!4v1701400000000!5m2!1sen!2sca"
-    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.312192243479!2d-75.73464818449701!3d45.35793957910017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce059de904efbd%3A0x3efb9f466fd57986!2sAlgonquin%20College%20-%20Woodroffe%20Campus!5e0!3m2!1sen!2sca!4v1701400000000!5m2!1sen!2sca"
+        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
+  </main>
 
-  <!-- =========================
-             FOOTER
-  ========================== -->
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Three Star Media </p>
+    <p>&copy; 2025 Three Star Media</p>
     <p>All images are taken from Unsplash</p>
   </footer>
-
-  <!-- JavaScript file -->
-  <script src="js/script.js"></script>
 
 </body>
 </html>
