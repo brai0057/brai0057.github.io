@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Star Media - Final Project</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <!-- ========================= HEADER ========================== -->
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Three Star Media Logo">
@@ -28,6 +24,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact Us</a></li>
+
         <li>
           <form class="search-form">
             <label for="search" class="visually-hidden">Search</label>
@@ -39,9 +36,7 @@
     </nav>
   </header>
 
-  <!-- =========================
-            MAIN CONTENT
-  ========================== -->
+  <!-- ========================= MAIN CONTENT ========================== -->
   <main>
 
     <!-- HERO -->
@@ -67,71 +62,55 @@
         provident earum soluta atque voluptate.</p>
     </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <h2>Our Services</h2>
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2>Our Services</h2>
 
-  <div class="service-grid">
+      <div class="service-cards">
 
-    <!-- LARGE SERVICE 1 -->
-    <article class="service-card large">
-      <img src="images/digital.jpg" alt="Digital Transformation">
-      <div class="service-content">
-        <h3>Digital Transformation</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Digital Plan</a>
+        <article class="service-card">
+          <img src="images/digital.jpg" alt="Digital Transformation">
+          <h3>Digital Transformation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
+
+        <article class="service-card">
+          <img src="images/marketing.jpg" alt="Marketing">
+          <h3>Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
+
+        <article class="service-card">
+          <img src="images/video.jpg" alt="Video Production">
+          <h3>Video Production</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
+
+        <article class="service-card">
+          <img src="images/web.jpg" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
+
+        <article class="service-card">
+          <img src="images/print.jpg" alt="Print Services">
+          <h3>Print</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn More</a>
+        </article>
+
       </div>
-    </article>
-
-    <!-- LARGE SERVICE 2 -->
-    <article class="service-card large">
-      <img src="images/marketing.jpg" alt="Marketing">
-      <div class="service-content">
-        <h3>Marketing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Marketing Plan</a>
-      </div>
-    </article>
-
-    <!-- SMALL SERVICE 1 -->
-    <article class="service-card small">
-      <img src="images/video.jpg" alt="Video Production">
-      <div class="service-content">
-        <h3>Video Production</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Video Plan</a>
-      </div>
-    </article>
-
-    <!-- SMALL SERVICE 2 -->
-    <article class="service-card small">
-      <img src="images/web.jpg" alt="Web Development">
-      <div class="service-content">
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Web Plan</a>
-      </div>
-    </article>
-
-    <!-- SMALL SERVICE 3 -->
-    <article class="service-card small">
-      <img src="images/print.jpg" alt="Print Services">
-      <div class="service-content">
-        <h3>Print</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Print Plan</a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- VISION -->
     <section class="vision">
       <h2>Our Vision</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <img src="images/vision.jpg" alt="Vision Image">
+      <img src="images/about-us.jpg" alt="Vision Image">
     </section>
 
     <!-- TEAM -->
@@ -195,9 +174,16 @@
             <th>Hours</th>
           </tr>
         </thead>
+
         <tbody>
-          <tr><td>Monday – Friday</td><td>9 AM – 6 PM</td></tr>
-          <tr><td>Saturday – Sunday</td><td>Closed</td></tr>
+          <tr>
+            <td>Monday – Friday</td>
+            <td>9 AM – 6 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday – Sunday</td>
+            <td>Closed</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -211,4 +197,5 @@
   </footer>
 
 </body>
+
 </html>
