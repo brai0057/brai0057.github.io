@@ -426,3 +426,61 @@ header > nav {
   position: absolute;
   right: 1rem;
 }
+
+/* --- FINAL IMDAC SERVICES GRID FIX (GUARANTEED 2x3) --- */
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 2rem;
+}
+
+/* Make the FIRST TWO services stretch across 3 columns layout to form row 1 */
+.service-card:nth-child(1),
+.service-card:nth-child(2) {
+  grid-column: span 1; /* stays in its own column */
+}
+
+/* Ensure ALL 5 cards always appear in the grid */
+.service-card {
+  background: #ffe6ac;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image */
+.service-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Title + text */
+.service-card h3 {
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.service-card p {
+  margin: 0 1rem 1rem;
+}
+
+/* Button */
+.service-card .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  font-weight: 700;
+  position: relative;
+}
+
+/* Arrow on right */
+.service-card .btn::after {
+  content: "▶";
+  position: absolute;
+  right: 1rem;
+}
