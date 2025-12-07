@@ -399,9 +399,10 @@ footer {
 
 /* FIX white gap under hero */
 .hero img {
-  display: none;
+  display: none !important;
 }
 
 .hero {
   margin-bottom: 0 !important;
 }
+
