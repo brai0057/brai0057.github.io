@@ -408,13 +408,15 @@ footer {
   padding-bottom: 0 !important;
 }
 
-/* Fix About Us layout */
+/* About Us layout fix */
 .about {
   background: #ffe6ac;
+  width: 100%;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: start;
   gap: 2rem;
+  align-items: start;
 }
+
 
