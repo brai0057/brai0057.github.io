@@ -356,3 +356,73 @@ header > nav {
 .about-text p {
   margin-bottom: 1rem;
 }
+
+/* --------- SERVICES SECTION (IMDAC EXACT STYLE) ----------- */
+
+.services {
+  margin-top: 4rem;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 2rem;
+}
+
+/* The last row (3 cards) */
+.service-card:nth-last-child(-n+3) {
+  grid-column: span 1;
+}
+
+/* Card shell styling */
+.service-card {
+  background: #ffe6ac;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+}
+
+/* Images full width */
+.service-card img {
+  width: 100%;
+  display: block;
+}
+
+/* Card title */
+.service-card h3 {
+  font-size: 1.4rem;
+  margin: 1rem;
+  font-weight: 700;
+}
+
+/* Description text */
+.service-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.service-card .btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  border-top: 2px solid rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Arrow inside button */
+.service-card .btn::after {
+  content: "▶";
+  position: absolute;
+  right: 1rem;
+}
