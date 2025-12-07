@@ -326,3 +326,33 @@ header > nav {
 .about p {
   margin-bottom: 1rem;
 }
+
+/* About Us Fix */
+.about {
+  background: #ffe6ac;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.about img {
+  width: 100%;
+  display: block;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
