@@ -276,3 +276,99 @@ footer {
   color: #c78c06;
   padding: 2rem 1rem;
 }
+
+/* FULL WIDTH HEADER */
+header {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  background: #222;
+}
+
+header > div,
+header > nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-nav a {
+  color: white;
+  font-weight: 600;
+}
+
+.desktop-nav a:hover {
+  color: #c78c06;
+}
+
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 34, 34, 0.65);
+}
+
+/* TEXT BOX */
+.hero-content {
+  position: relative;
+  width: 55%;
+  background: rgba(34, 34, 34, 0.65);
+  padding: 2.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.hero .btn {
+  margin-top: 1.5rem;
+  background: #c78c06;
+  color: #222;
+  padding: 1rem 1.8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.about {
+  background: #ffe6ac;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background: #222;
+  color: #c78c06;
+  padding: 2.5rem;
+  text-align: left;
+}
