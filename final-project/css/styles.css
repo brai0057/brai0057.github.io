@@ -1,4 +1,5 @@
-/* RESET FONT IMPORT -------------------------------------------------- */
+/* STYLES.CSS —  ---------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
@@ -7,7 +8,7 @@ body {
   line-height: 1.6;
 }
 
-/* STRUCTURE ----------------------------------------------------------- */
+/* Structure ------------------------------------------------------------- */
 
 header,
 main,
@@ -18,23 +19,13 @@ footer {
   padding: 1rem;
 }
 
-/* HEADER -------------------------------------------------------------- */
+/* HEADER --------------------------------------------------------------- */
 
 header {
-  width: 100%;
-  max-width: none;
-  padding: 0;
-  background: #222;
-}
-
-header > div,
-header > nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1.5rem;
 }
 
 .logo img {
@@ -48,7 +39,6 @@ header > nav {
 }
 
 .desktop-nav a {
-  color: white;
   font-weight: 600;
   padding: 0.5rem;
 }
@@ -57,7 +47,8 @@ header > nav {
   color: #c78c06;
 }
 
-/* Search box */
+/* Search box --------------------------- */
+
 .search-form {
   display: flex;
   align-items: center;
@@ -77,82 +68,15 @@ header > nav {
   cursor: pointer;
 }
 
-/* -------------------- CLEAN HERO -------------------- */
-
-.hero {
-  position: relative;
-  background: url("../images/main-banner.jpg") center/cover no-repeat;
-  padding: 6rem 1rem 3rem 1rem;
-  color: white;
-  margin-bottom: 0;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(34, 34, 34, 0.65);
-}
-
-.hero-content {
-  position: relative;
-  width: 55%;
-  background: rgba(34, 34, 34, 0.65);
-  padding: 2.5rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-top: 1rem;
-}
-
-.hero .btn {
-  margin-top: 1.5rem;
+.btn {
   background: #c78c06;
-  color: #222;
-  padding: 1rem 1.8rem;
+  padding: 0.9rem 1.4rem;
   font-weight: 700;
+  color: #222;
   display: inline-block;
 }
 
-.hero img {
-  display: none;
-}
-
-/* -------------------- CLEAN ABOUT -------------------- */
-
-.about {
-  background: #ffe6ac;
-  width: 100%;
-  padding: 2rem;
-  margin-top: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.about img {
-  width: 100%;
-  display: block;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  margin-bottom: 1rem;
-}
-
-/* SERVICES ------------------------------------------------------------ */
+/* SERVICES SECTION ----------------------------------------------------- */
 
 .services {
   margin-top: 4rem;
@@ -190,7 +114,7 @@ header > nav {
   margin: 1rem;
 }
 
-/* VISION --------------------------------------------------------------- */
+/* VISION SECTION ------------------------------------------------------- */
 
 .vision {
   margin-top: 4rem;
@@ -212,7 +136,7 @@ header > nav {
   position: relative;
 }
 
-/* TEAM --------------------------------------------------------------- */
+/* TEAM SECTION --------------------------------------------------------- */
 
 .team {
   margin-top: 4rem;
@@ -280,7 +204,7 @@ header > nav {
   border: none;
 }
 
-/* HOURS --------------------------------------------------------------- */
+/* HOURS --------------------------------------------------- */
 
 .hours {
   margin-top: 3rem;
@@ -301,12 +225,104 @@ header > nav {
   background: #ffe6ac;
 }
 
-/* FOOTER -------------------------------------------------------------- */
+/* FOOTER -------------------------------------------------- */
 
 footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   background: #222;
   color: #c78c06;
+  padding: 2rem 1rem;
+}
+
+/* FULL WIDTH HEADER */
+header {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  background: #222;
+}
+
+header > div,
+header > nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-nav a {
+  color: white;
+  font-weight: 600;
+}
+
+.desktop-nav a:hover {
+  color: #c78c06;
+}
+
+.about {
+  margin-top: 0 !important;
+  padding-top: 2rem; /* keeps normal spacing, but removes the white gap */
+}
+
+.about h2 {
+  margin-top: 0 !important;
+}
+
+/* -------------------- CLEAN HERO -------------------- */
+
+.hero {
+  position: relative;
+  background: url("../images/main-banner.jpg") center/cover no-repeat;
+  padding: 6rem 1rem 3rem 1rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 34, 34, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  width: 55%;
+  background: rgba(34, 34, 34, 0.65);
   padding: 2.5rem;
-  text-align: left;
+}
+
+.hero img {
+  display: none;
+}
+
+
+/* -------------------- CLEAN ABOUT -------------------- */
+
+.about {
+  background: #ffe6ac;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.about img {
+  width: 100%;
+  display: block;
+}
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
 }
