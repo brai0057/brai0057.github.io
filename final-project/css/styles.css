@@ -397,12 +397,24 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* FIX white gap under hero */
+/* Remove duplicate hero image that causes white gap */
 .hero img {
   display: none !important;
 }
 
+/* Remove remaining gap */
 .hero {
   margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Fix About Us layout */
+.about {
+  background: #ffe6ac;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 2rem;
 }
 
