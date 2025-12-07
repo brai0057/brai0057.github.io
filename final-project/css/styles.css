@@ -297,18 +297,24 @@ header > nav {
 }
 
 .vision-btn {
-  background: #222;
-  color: #fff;
-  padding: 1rem 1.5rem;
-  font-weight: 700;
+  background: #0f1c2c;        
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border: 2px solid #c78c06;  
   display: inline-block;
   position: relative;
+  font-size: 1rem;
 }
 
 .vision-btn::after {
   content: "▶";
   position: absolute;
   right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1rem;
 }
 
 /* TEAM --------------------------------------------------------------- */
