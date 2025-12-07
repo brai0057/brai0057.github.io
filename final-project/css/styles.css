@@ -133,7 +133,7 @@ header > nav {
   margin-bottom: 1rem;
 }
 
-/* SERVICES (FINAL IMDAC VERSION) ---------------------------------- */
+/* ========================= SERVICES (IMDAC EXACT LAYOUT) ========================= */
 
 .services {
   margin-top: 4rem;
@@ -144,16 +144,15 @@ header > nav {
   margin-bottom: 1.5rem;
 }
 
-/* GRID CONTAINER */
+/* GRID WRAPPER */
 .service-cards {
   display: grid;
   gap: 2rem;
 }
 
-/* ---------- LARGE TOP TWO CARDS ---------- */
-
+/* ---------- TOP TWO LARGE HORIZONTAL CARDS ---------- */
 .service-card:nth-child(-n+2) {
-  grid-column: 1 / -1;            /* full width row */
+  grid-column: 1 / -1;            /* Full-width row */
   display: grid;
   grid-template-columns: 1fr 1fr; /* image left, text right */
   background: #ffe6ac;
@@ -172,6 +171,7 @@ header > nav {
   justify-content: center;
 }
 
+/* Button — large cards */
 .service-card:nth-child(-n+2) .btn {
   background: #222;
   color: white;
@@ -186,7 +186,7 @@ header > nav {
   right: 1rem;
 }
 
-/* ---------- SMALL BOTTOM THREE CARDS (3 per row) ---------- */
+/* ---------- BOTTOM THREE SMALL CARDS (3 per row on desktop) ---------- */
 
 .service-card:nth-child(n+3) {
   background: #ffe6ac;
@@ -209,6 +209,7 @@ header > nav {
   margin: 0 1rem 1rem;
 }
 
+/* Button — small cards */
 .service-card:nth-child(n+3) .btn {
   background: #222;
   color: white;
@@ -224,14 +225,41 @@ header > nav {
   right: 1rem;
 }
 
-/* ---- GRID RULE: 3 COLUMNS FOR BOTTOM ROW ---- */
+/* ---------- DESKTOP: 3-COLUMN BOTTOM ROW ---------- */
+
 @media (min-width: 900px) {
   .service-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* First two cards stretch full row but remain 1×2 layout */
+  .service-card:nth-child(1),
+  .service-card:nth-child(2) {
+    grid-column: span 3;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- TABLET: 2 per row ---------- */
+@media (max-width: 899px) and (min-width: 600px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .service-card:nth-child(-n+2) {
-    grid-column: span 3; /* takes full row */
+    grid-column: span 2; /* full width */
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- MOBILE: 1 per row ---------- */
+@media (max-width: 599px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card:nth-child(-n+2) {
+    grid-template-columns: 1fr;
   }
 }
 
