@@ -1,4 +1,4 @@
-/* STYLES.CSS — EXACT IMDAC LOOK ---------------------------------------- */
+/* STYLES.CSS —  ---------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
@@ -373,7 +373,7 @@ footer {
   text-align: left;
 }
 
-/* FIX: About Us layout - match IMDac */
+/* FIX: About Us layout - */
 .about {
   background: #ffe6ac;
   display: grid;
