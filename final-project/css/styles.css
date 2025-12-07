@@ -419,4 +419,18 @@ footer {
   align-items: start;
 }
 
+/* Remove unwanted gap between hero and about section */
+.hero {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.about {
+  margin-top: 0 !important;
+  padding-top: 2rem; /* keeps normal spacing, but removes the white gap */
+}
+
+.about h2 {
+  margin-top: 0 !important;
+}
 
