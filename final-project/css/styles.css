@@ -1,5 +1,4 @@
-/* STYLES.CSS —  ---------------------------------------- */
-
+/* GOOGLE FONT ------------------------------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
@@ -8,8 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* Structure ------------------------------------------------------------- */
-
+/* STRUCTURE --------------------------------------------------------- */
 header,
 main,
 footer {
@@ -19,13 +17,24 @@ footer {
   padding: 1rem;
 }
 
-/* HEADER --------------------------------------------------------------- */
-
+/* HEADER ------------------------------------------------------------ */
 header {
+  width: 100%;
+  max-width: none;
+  background: #222;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header > div,
+header > nav {
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1.5rem;
 }
 
 .logo img {
@@ -39,15 +48,13 @@ header {
 }
 
 .desktop-nav a {
+  color: white;
   font-weight: 600;
-  padding: 0.5rem;
 }
 
 .desktop-nav a:hover {
   color: #c78c06;
 }
-
-/* Search box --------------------------- */
 
 .search-form {
   display: flex;
@@ -57,7 +64,6 @@ header {
 
 .search-form input {
   padding: 0.4rem 0.6rem;
-  border: 1px solid #aaa;
 }
 
 .search-form button {
@@ -65,9 +71,9 @@ header {
   color: white;
   padding: 0.4rem 0.8rem;
   border: none;
-  cursor: pointer;
 }
 
+/* BUTTON ------------------------------------------------------------ */
 .btn {
   background: #c78c06;
   padding: 0.9rem 1.4rem;
@@ -76,202 +82,7 @@ header {
   display: inline-block;
 }
 
-/* SERVICES SECTION ----------------------------------------------------- */
-
-.services {
-  margin-top: 4rem;
-}
-
-.services h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.service-cards {
-  display: grid;
-  gap: 2rem;
-}
-
-.service-card {
-  background: #ffe6ac;
-  padding-bottom: 2rem;
-}
-
-.service-card img {
-  width: 100%;
-}
-
-.service-card h3 {
-  font-size: 1.4rem;
-  margin: 1rem;
-}
-
-.service-card p {
-  margin: 0 1rem;
-}
-
-.service-card .btn {
-  margin: 1rem;
-}
-
-/* VISION SECTION ------------------------------------------------------- */
-
-.vision {
-  margin-top: 4rem;
-  position: relative;
-  background: url("../images/about-us.jpg") center/cover no-repeat;
-  padding: 4rem 1rem;
-  text-align: center;
-  color: white;
-}
-
-.vision::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(34, 34, 34, 0.6);
-}
-
-.vision * {
-  position: relative;
-}
-
-/* TEAM SECTION --------------------------------------------------------- */
-
-.team {
-  margin-top: 4rem;
-}
-
-.team h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.team-members {
-  display: grid;
-  gap: 2rem;
-}
-
-.team-member {
-  background: #ffe6ac;
-}
-
-.team-member img {
-  width: 100%;
-}
-
-.team-info {
-  padding: 1rem;
-}
-
-.team-info h3 {
-  font-size: 1.4rem;
-}
-
-.team-info h4 {
-  margin: 0.4rem 0 1rem;
-  font-weight: 600;
-}
-
-/* CONTACT SECTION ------------------------------------------------------ */
-
-.contact {
-  margin-top: 4rem;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.contact-form {
-  max-width: 600px;
-  display: grid;
-  gap: 0.8rem;
-  margin-bottom: 2rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.6rem;
-  border: 1px solid #aaa;
-}
-
-.contact .btn {
-  background: #222;
-  color: #fff;
-  padding: 0.7rem 1.2rem;
-  border: none;
-}
-
-/* HOURS --------------------------------------------------- */
-
-.hours {
-  margin-top: 3rem;
-}
-
-.hours table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.hours th,
-.hours td {
-  border: 1px solid #222;
-  padding: 0.6rem;
-}
-
-.hours th {
-  background: #ffe6ac;
-}
-
-/* FOOTER -------------------------------------------------- */
-
-footer {
-  margin-top: 3rem;
-  background: #222;
-  color: #c78c06;
-  padding: 2rem 1rem;
-}
-
-/* FULL WIDTH HEADER */
-header {
-  width: 100%;
-  max-width: none;
-  padding: 0;
-  background: #222;
-}
-
-header > div,
-header > nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.desktop-nav a {
-  color: white;
-  font-weight: 600;
-}
-
-.desktop-nav a:hover {
-  color: #c78c06;
-}
-
-.about {
-  margin-top: 0 !important;
-  padding-top: 2rem; /* keeps normal spacing, but removes the white gap */
-}
-
-.about h2 {
-  margin-top: 0 !important;
-}
-
-/* -------------------- CLEAN HERO -------------------- */
-
+/* HERO -------------------------------------------------------------- */
 .hero {
   position: relative;
   background: url("../images/main-banner.jpg") center/cover no-repeat;
@@ -298,54 +109,19 @@ header > nav {
   display: none;
 }
 
-
-/* -------------------- CLEAN ABOUT -------------------- */
-
-.about {
-  background: #ffe6ac;
-  width: 100%;
-  padding: 2rem;
-  margin-top: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.about img {
-  width: 100%;
-  display: block;
-}
-
-.about h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.about p {
-  margin-bottom: 1rem;
-}
-
-/* About Us Fix */
+/* ABOUT ------------------------------------------------------------- */
 .about {
   background: #ffe6ac;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
+  margin-top: 0;
   align-items: start;
 }
 
 .about img {
   width: 100%;
-  display: block;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .about-text h2 {
@@ -357,7 +133,7 @@ header > nav {
   margin-bottom: 1rem;
 }
 
-/* --------- SERVICES SECTION (IMDAC EXACT STYLE) ----------- */
+/* SERVICES (FINAL IMDAC VERSION) ---------------------------------- */
 
 .services {
   margin-top: 4rem;
@@ -368,187 +144,27 @@ header > nav {
   margin-bottom: 1.5rem;
 }
 
+/* GRID CONTAINER */
 .service-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 2rem;
 }
 
-/* The last row (3 cards) */
-.service-card:nth-last-child(-n+3) {
-  grid-column: span 1;
-}
+/* ---------- LARGE TOP TWO CARDS ---------- */
 
-/* Card shell styling */
-.service-card {
-  background: #ffe6ac;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid #ddd;
-}
-
-/* Images full width */
-.service-card img {
-  width: 100%;
-  display: block;
-}
-
-/* Card title */
-.service-card h3 {
-  font-size: 1.4rem;
-  margin: 1rem;
-  font-weight: 700;
-}
-
-/* Description text */
-.service-card p {
-  margin: 0 1rem 1rem;
-  font-size: 0.95rem;
-}
-
-/* Button */
-.service-card .btn {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: #222;
-  color: white;
-  padding: 1rem;
-  font-weight: 600;
-  border-top: 2px solid rgba(0,0,0,0.1);
-  position: relative;
-}
-
-/* Arrow inside button */
-.service-card .btn::after {
-  content: "▶";
-  position: absolute;
-  right: 1rem;
-}
-
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-  gap: 2rem;
-}
-
-.service-card:nth-child(1),
-.service-card:nth-child(2) {
-  grid-column: span 1; /* stays in its own column */
-}
-
-.service-card {
-  background: #ffe6ac;
-  border: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-}
-
-.service-card img {
-  width: 100%;
-  display: block;
-}
-
-.service-card h3 {
-  margin: 1rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.service-card p {
-  margin: 0 1rem 1rem;
-}
-
-.service-card .btn {
-  display: block;
-  width: 100%;
-  text-align: left;
-  background: #222;
-  color: white;
-  padding: 1rem;
-  font-weight: 700;
-  position: relative;
-}
-
-.service-card .btn::after {
-  content: "▶";
-  position: absolute;
-  right: 1rem;
-}
-
-/* Grid system */
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.service-card:nth-child(1),
-.service-card:nth-child(2) {
-  grid-column: span 3; /* full width row */
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* image left, content right */
-}
-
-.service-card:nth-child(1) img,
-.service-card:nth-child(2) img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.service-card:nth-child(1) div,
-.service-card:nth-child(2) div {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.service-card:nth-child(n+3) {
-  background: #ffe6ac;
-}
-
-.service-card .btn {
-  display: block;
-  background: #222;
-  color: white;
-  padding: 1rem;
-  text-align: left;
-  font-weight: 700;
-  margin-top: auto;
-  position: relative;
-}
-
-.service-card .btn::after {
-  content: "▶";
-  position: absolute;
-  right: 1rem;
-}
-
-/* ----- FINAL IMDAC SERVICES LAYOUT (2 BIG + 3 SMALL) ----- */
-
-.service-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
-/* Make first two cards behave like IMDac: wide horizontal cards */
 .service-card:nth-child(-n+2) {
+  grid-column: 1 / -1;            /* full width row */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* image left, text right */
   background: #ffe6ac;
 }
 
-/* Ensure images in first two cards fill their half */
 .service-card:nth-child(-n+2) img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Content side of the first two cards */
 .service-card:nth-child(-n+2) > div {
   padding: 2rem;
   display: flex;
@@ -556,22 +172,140 @@ header > nav {
   justify-content: center;
 }
 
-/* Now change grid for remaining 3 cards to 3-per-row */
+.service-card:nth-child(-n+2) .btn {
+  background: #222;
+  color: white;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.service-card:nth-child(-n+2) .btn::after {
+  content: "▶";
+  position: absolute;
+  right: 1rem;
+}
+
+/* ---------- SMALL BOTTOM THREE CARDS (3 per row) ---------- */
+
 .service-card:nth-child(n+3) {
+  background: #ffe6ac;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:nth-child(n+3) img {
+  width: 100%;
+}
+
+.service-card:nth-child(n+3) h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  font-weight: 700;
+}
+
+.service-card:nth-child(n+3) p {
+  margin: 0 1rem 1rem;
+}
+
+.service-card:nth-child(n+3) .btn {
+  background: #222;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  position: relative;
+}
+
+.service-card:nth-child(n+3) .btn::after {
+  content: "▶";
+  position: absolute;
+  right: 1rem;
+}
+
+/* ---- GRID RULE: 3 COLUMNS FOR BOTTOM ROW ---- */
+@media (min-width: 900px) {
+  .service-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-card:nth-child(-n+2) {
+    grid-column: span 3; /* takes full row */
+  }
+}
+
+/* VISION -------------------------------------------------------------- */
+.vision {
+  margin-top: 4rem;
+  background: url("../images/about-us.jpg") center/cover no-repeat;
+  position: relative;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.vision::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(34,34,34,0.6);
+}
+
+.vision * {
+  position: relative;
+}
+
+/* TEAM --------------------------------------------------------------- */
+.team-members {
+  display: grid;
+  gap: 2rem;
+}
+
+.team-member {
   background: #ffe6ac;
 }
 
-.service-cards:nth-child(1n) {
-  grid-template-columns: repeat(2, 1fr); /* row 1 only */
+.team-member img {
+  width: 100%;
 }
 
-@media (min-width: 900px) {
-  .service-cards {
-    grid-template-columns: repeat(3, 1fr); /* row 2 and on */
-  }
-  
-  .service-card:nth-child(-n+2) {
-    grid-column: span 3;        /* take up the full width of row */
-    grid-template-columns: 1fr 1fr;
-  }
+.team-info {
+  padding: 1rem;
+}
+
+/* CONTACT ------------------------------------------------------------- */
+.contact-form {
+  max-width: 600px;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact .btn {
+  background: #222;
+  color: white;
+}
+
+/* HOURS --------------------------------------------------------------- */
+.hours table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours th,
+.hours td {
+  border: 1px solid #222;
+  padding: 0.6rem;
+}
+
+.hours th {
+  background: #ffe6ac;
+}
+
+/* FOOTER -------------------------------------------------------------- */
+footer {
+  margin-top: 3rem;
+  background: #222;
+  color: #c78c06;
+  padding: 2rem 1rem;
 }
