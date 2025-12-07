@@ -427,21 +427,17 @@ header > nav {
   right: 1rem;
 }
 
-/* --- FINAL IMDAC SERVICES GRID FIX (GUARANTEED 2x3) --- */
-
 .service-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
   gap: 2rem;
 }
 
-/* Make the FIRST TWO services stretch across 3 columns layout to form row 1 */
 .service-card:nth-child(1),
 .service-card:nth-child(2) {
   grid-column: span 1; /* stays in its own column */
 }
 
-/* Ensure ALL 5 cards always appear in the grid */
 .service-card {
   background: #ffe6ac;
   border: 1px solid #ddd;
@@ -449,13 +445,11 @@ header > nav {
   flex-direction: column;
 }
 
-/* Image */
 .service-card img {
   width: 100%;
   display: block;
 }
 
-/* Title + text */
 .service-card h3 {
   margin: 1rem;
   font-size: 1.4rem;
@@ -466,7 +460,6 @@ header > nav {
   margin: 0 1rem 1rem;
 }
 
-/* Button */
 .service-card .btn {
   display: block;
   width: 100%;
@@ -478,7 +471,55 @@ header > nav {
   position: relative;
 }
 
-/* Arrow on right */
+.service-card .btn::after {
+  content: "▶";
+  position: absolute;
+  right: 1rem;
+}
+
+/* Grid system */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card:nth-child(1),
+.service-card:nth-child(2) {
+  grid-column: span 3; /* full width row */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* image left, content right */
+}
+
+.service-card:nth-child(1) img,
+.service-card:nth-child(2) img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.service-card:nth-child(1) div,
+.service-card:nth-child(2) div {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:nth-child(n+3) {
+  background: #ffe6ac;
+}
+
+.service-card .btn {
+  display: block;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  margin-top: auto;
+  position: relative;
+}
+
 .service-card .btn::after {
   content: "▶";
   position: absolute;
