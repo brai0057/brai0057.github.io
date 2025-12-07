@@ -372,3 +372,36 @@ footer {
   padding: 2.5rem;
   text-align: left;
 }
+
+/* FIX: About Us layout - match IMDac */
+.about {
+  background: #ffe6ac;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.about img {
+  width: 100%;
+  display: block;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+/* FIX white gap under hero */
+.hero img {
+  display: none;
+}
+
+.hero {
+  margin-bottom: 0 !important;
+}
