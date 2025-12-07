@@ -317,23 +317,80 @@ header > nav {
   font-size: 1rem;
 }
 
-/* TEAM --------------------------------------------------------------- */
-.team-members {
-  display: grid;
-  gap: 2rem;
+/* ========================= TEAM (IMDAC LAYOUT) ========================= */
+
+.team {
+  margin-top: 4rem;
 }
 
+.team h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 2-column full-width rows */
+.team-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+/* Each team member is a 1-row, 2-column grid */
 .team-member {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background: #ffe6ac;
 }
 
 .team-member img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team-info {
-  padding: 1rem;
+  padding: 2rem;
 }
+
+.team-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.team-info h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.3rem;
+  width: fit-content;
+}
+
+.team-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Reverse Bob's layout (image right, text left) */
+.team-member:nth-child(2) img {
+  order: 2;
+}
+
+/* MOBILE STACKING */
+@media (max-width: 800px) {
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member:nth-child(2) img {
+    order: 0; /* reset order so image appears first on mobile */
+  }
+}
+
 
 /* CONTACT ------------------------------------------------------------- */
 .contact-form {
