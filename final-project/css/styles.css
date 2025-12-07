@@ -337,3 +337,22 @@ footer {
   color: #c78c06;
   padding: 2rem 1rem;
 }
+
+/* ===== HEADER SPACING FIX  ===== */
+
+/* Increase spacing between all menu items */
+.desktop-nav ul {
+  gap: 3.2rem; /* Wider, identical to IMDac */
+}
+
+/* Make the text feel more evenly spaced + cleaner */
+.desktop-nav a {
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  padding: 0.5rem 0;
+}
+
+/* Add a bit of spacing before the search box */
+.desktop-nav li:last-child {
+  margin-left: 2rem;
+}
