@@ -372,3 +372,8 @@ footer {
   padding: 2.5rem;
   text-align: left;
 }
+
+/* FIX: Remove white gap under hero */
+main {
+  padding-top: 0 !important;
+}
