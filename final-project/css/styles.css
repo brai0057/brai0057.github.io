@@ -133,7 +133,7 @@ header > nav {
   margin-bottom: 1rem;
 }
 
-/* ========================= SERVICES (IMDAC EXACT LAYOUT) ========================= */
+/* ========================= SERVICES  ========================= */
 
 .services {
   margin-top: 4rem;
@@ -263,25 +263,52 @@ header > nav {
   }
 }
 
-/* VISION -------------------------------------------------------------- */
+/* ================= VISION SECTION ================= */
+
 .vision {
   margin-top: 4rem;
-  background: url("../images/about-us.jpg") center/cover no-repeat;
+  background: url("../images/vision.jpg") center/cover no-repeat;
   position: relative;
   color: white;
-  padding: 4rem 1rem;
-  text-align: center;
+  padding: 4rem 2rem;
 }
 
 .vision::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(34,34,34,0.6);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-.vision * {
+.vision-content {
   position: relative;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.vision h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.vision p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.vision-btn {
+  background: #222;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+
+.vision-btn::after {
+  content: "▶";
+  position: absolute;
+  right: 1rem;
 }
 
 /* TEAM --------------------------------------------------------------- */
