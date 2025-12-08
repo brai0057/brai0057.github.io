@@ -1,13 +1,14 @@
-/* GOOGLE FONT ------------------------------------------------------ */
+/* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+/* BASE */
 body {
   font-family: "Open Sans", sans-serif;
   color: #222;
   line-height: 1.6;
 }
 
-/* STRUCTURE --------------------------------------------------------- */
+/* STRUCTURE */
 header,
 main,
 footer {
@@ -17,7 +18,7 @@ footer {
   padding: 1rem;
 }
 
-/* HEADER ------------------------------------------------------------ */
+/* HEADER */
 header {
   width: 100%;
   max-width: none;
@@ -44,16 +45,23 @@ header > nav {
 .desktop-nav ul {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 3.2rem;
 }
 
 .desktop-nav a {
   color: white;
   font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  padding: 0.5rem 0;
 }
 
 .desktop-nav a:hover {
   color: #c78c06;
+}
+
+.desktop-nav li:last-child {
+  margin-left: 2rem;
 }
 
 .search-form {
@@ -73,7 +81,7 @@ header > nav {
   border: none;
 }
 
-/* BUTTON ------------------------------------------------------------ */
+/* BUTTON */
 .btn {
   background: #c78c06;
   padding: 0.9rem 1.4rem;
@@ -82,7 +90,7 @@ header > nav {
   display: inline-block;
 }
 
-/* HERO -------------------------------------------------------------- */
+/* HERO */
 .hero {
   position: relative;
   background: url("../images/main-banner.jpg") center/cover no-repeat;
@@ -109,7 +117,7 @@ header > nav {
   display: none;
 }
 
-/* ABOUT ------------------------------------------------------------- */
+/* ABOUT */
 .about {
   background: #ffe6ac;
   display: grid;
@@ -133,8 +141,7 @@ header > nav {
   margin-bottom: 1rem;
 }
 
-/* ========================= SERVICES  ========================= */
-
+/* SERVICES */
 .services {
   margin-top: 4rem;
 }
@@ -144,17 +151,16 @@ header > nav {
   margin-bottom: 1.5rem;
 }
 
-/* GRID WRAPPER */
 .service-cards {
   display: grid;
   gap: 2rem;
 }
 
-/* ---------- TOP TWO LARGE HORIZONTAL CARDS ---------- */
+/* Large Cards (1 & 2) */
 .service-card:nth-child(-n+2) {
-  grid-column: 1 / -1;            /* Full-width row */
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* image left, text right */
+  grid-template-columns: 1fr 1fr;
   background: #ffe6ac;
 }
 
@@ -171,7 +177,6 @@ header > nav {
   justify-content: center;
 }
 
-/* Button — large cards */
 .service-card:nth-child(-n+2) .btn {
   background: #222;
   color: white;
@@ -186,8 +191,7 @@ header > nav {
   right: 1rem;
 }
 
-/* ---------- BOTTOM THREE SMALL CARDS (3 per row on desktop) ---------- */
-
+/* Small Cards */
 .service-card:nth-child(n+3) {
   background: #ffe6ac;
   border: 1px solid #ddd;
@@ -209,7 +213,6 @@ header > nav {
   margin: 0 1rem 1rem;
 }
 
-/* Button — small cards */
 .service-card:nth-child(n+3) .btn {
   background: #222;
   color: white;
@@ -225,14 +228,12 @@ header > nav {
   right: 1rem;
 }
 
-/* ---------- DESKTOP: 3-COLUMN BOTTOM ROW ---------- */
-
+/* Services Desktop Layout */
 @media (min-width: 900px) {
   .service-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* First two cards stretch full row but remain 1×2 layout */
   .service-card:nth-child(1),
   .service-card:nth-child(2) {
     grid-column: span 3;
@@ -240,19 +241,19 @@ header > nav {
   }
 }
 
-/* ---------- TABLET: 2 per row ---------- */
+/* Services Tablet */
 @media (max-width: 899px) and (min-width: 600px) {
   .service-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .service-card:nth-child(-n+2) {
-    grid-column: span 2; /* full width */
+    grid-column: span 2;
     grid-template-columns: 1fr;
   }
 }
 
-/* ---------- MOBILE: 1 per row ---------- */
+/* Services Mobile */
 @media (max-width: 599px) {
   .service-cards {
     grid-template-columns: 1fr;
@@ -263,8 +264,7 @@ header > nav {
   }
 }
 
-/* ================= VISION SECTION ================= */
-
+/* VISION */
 .vision {
   margin-top: 4rem;
   background: url("../images/vision.jpg") center/cover no-repeat;
@@ -293,18 +293,15 @@ header > nav {
 
 .vision p {
   margin-bottom: 1.5rem;
-  line-height: 1.5;
 }
 
 .vision-btn {
-  background: #0f1c2c;        
+  background: #0f1c2c;
   color: white;
   padding: 1rem 2rem;
+  border: 2px solid #c78c06;
   font-weight: 600;
-  border: 2px solid #c78c06;  
-  display: inline-block;
   position: relative;
-  font-size: 1rem;
 }
 
 .vision-btn::after {
@@ -313,204 +310,52 @@ header > nav {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
-  font-size: 1rem;
 }
 
-/* ================= TEAM (MATCH IMDAC LAYOUT) ================= */
-
+/* TEAM */
 .team {
   margin-top: 4rem;
 }
 
 .team-members {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* two columns */
-  grid-template-rows: auto auto;  /* two rows */
-  gap: 0;
+  grid-template-columns: 1fr;
 }
 
-/* Each team member becomes a 2-column layout (image + text) */
 .team-member {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #ffe6ac;
 }
 
-/* Make images fill correctly */
 .team-member img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Team info panel */
 .team-info {
   padding: 2rem;
 }
 
-/* ------- Force correct layout order ------- */
+.team-member:nth-child(1) img { order: 1; }
+.team-member:nth-child(1) .team-info { order: 2; }
 
-/* John Doe — image left, text right */
-.team-member:nth-child(1) img {
-  order: 1;
-}
-.team-member:nth-child(1) .team-info {
-  order: 2;
-}
+.team-member:nth-child(2) img { order: 2; }
+.team-member:nth-child(2) .team-info { order: 1; }
 
-/* Bob Rite — text left, image right */
-.team-member:nth-child(2) img {
-  order: 2;
-}
-.team-member:nth-child(2) .team-info {
-  order: 1;
-}
-
-/* Mobile: stack each member vertically */
 @media (max-width: 700px) {
   .team-member {
     grid-template-columns: 1fr;
   }
 
-  /* Reset order on mobile */
   .team-member img,
   .team-member .team-info {
     order: initial;
   }
 }
 
-/* MOBILE STACKING */
-@media (max-width: 800px) {
-  .team-members {
-    grid-template-columns: 1fr;
-  }
-
-  .team-member {
-    grid-template-columns: 1fr;
-  }
-
-  .team-member:nth-child(2) img {
-    order: 0; /* reset order so image appears first on mobile */
-  }
-}
-
-
-/* CONTACT ------------------------------------------------------------- */
-.contact-form {
-  max-width: 600px;
-  display: grid;
-  gap: 0.8rem;
-}
-
-.contact .btn {
-  background: #222;
-  color: white;
-}
-
-/* HOURS --------------------------------------------------------------- */
-.hours table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.hours th,
-.hours td {
-  border: 1px solid #222;
-  padding: 0.6rem;
-}
-
-.hours th {
-  background: #ffe6ac;
-}
-
-/* FOOTER -------------------------------------------------------------- */
-footer {
-  margin-top: 3rem;
-  background: #222;
-  color: #c78c06;
-  padding: 2rem 1rem;
-}
-
-/* ===== HEADER SPACING FIX  ===== */
-
-/* Increase spacing between all menu items */
-.desktop-nav ul {
-  gap: 3.2rem; /* Wider, identical to IMDac */
-}
-
-/* Make the text feel more evenly spaced + cleaner */
-.desktop-nav a {
-  font-size: 1rem;
-  letter-spacing: 0.4px;
-  padding: 0.5rem 0;
-}
-
-/* Add a bit of spacing before the search box */
-.desktop-nav li:last-child {
-  margin-left: 2rem;
-}
-
-/* ================= TEAM — IMDAC CORRECT LAYOUT ================= */
-
-.team-members {
-  display: grid;
-  grid-template-columns: 1fr;   /* One member per row */
-  gap: 0;
-}
-
-/* Each team member becomes 2 columns: image + text */
-.team-member {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: #ffe6ac;
-}
-
-/* Make images behave correctly */
-.team-member img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Team info box styling */
-.team-info {
-  padding: 2rem;
-}
-
-/* ---------- FORCE JOHN DOE LAYOUT ---------- */
-/* Row 1: image left, text right */
-.team-member:nth-child(1) img {
-  order: 1;
-}
-.team-member:nth-child(1) .team-info {
-  order: 2;
-}
-
-/* ---------- FORCE BOB RITE LAYOUT ---------- */
-/* Row 2: text left, image right */
-.team-member:nth-child(2) img {
-  order: 2;
-}
-.team-member:nth-child(2) .team-info {
-  order: 1;
-}
-
-/* ---------- MOBILE FIX ---------- */
-@media (max-width: 700px) {
-  .team-member {
-    grid-template-columns: 1fr;
-  }
-
-  /* Reset natural order on mobile */
-  .team-member img,
-  .team-member .team-info {
-    order: initial;
-  }
-}
-
-/* ================= CONTACT US FIX ================= */
-
+/* CONTACT */
 .contact {
   margin-top: 4rem;
   display: grid;
@@ -519,9 +364,8 @@ footer {
 }
 
 .contact h2 {
-  grid-column: 1 / -1; /* full width */
+  grid-column: 1 / -1;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
 }
 
 .contact-left h3,
@@ -558,7 +402,6 @@ footer {
   border: 0;
 }
 
-/* MOBILE */
 @media (max-width: 700px) {
   .contact {
     grid-template-columns: 1fr;
@@ -567,4 +410,12 @@ footer {
   .contact h2 {
     grid-column: 1;
   }
+}
+
+/* FOOTER */
+footer {
+  margin-top: 3rem;
+  background: #222;
+  color: #c78c06;
+  padding: 2rem 1rem;
 }
