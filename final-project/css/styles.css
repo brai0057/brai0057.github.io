@@ -493,24 +493,22 @@ footer {
   }
 }
 
-/* MOBILE HERO  */
+/* ===== MOBILE HERO FIX ===== */
 @media (max-width: 600px) {
   .hero {
     padding: 3rem 1rem;
     background-position: center;
   }
 
-  /* Full-width dark overlay */
   .hero::before {
     background: rgba(34, 34, 34, 0.65);
-    width: 100%;
-    right: 0;
+    width: 55%;
+    right: auto;
   }
 
-  /* Centered mobile panel */
   .hero-content {
-    width: 100%;
-    padding: 2rem 1rem;
+    width: 55%;
+    padding: 1.5rem;
   }
 
   .hero-content h1 {
