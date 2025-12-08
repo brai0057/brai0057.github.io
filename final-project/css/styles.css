@@ -412,6 +412,25 @@ header > nav {
   }
 }
 
+/* HOURS OF OPERATION */
+.hours table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.hours th,
+.hours td {
+  border: 1px solid #222;
+  padding: 0.8rem;
+}
+
+.hours th {
+  background: #ffe6ac;
+  text-align: left;
+  font-weight: 700;
+}
+
 /* FOOTER */
 footer {
   margin-top: 3rem;
