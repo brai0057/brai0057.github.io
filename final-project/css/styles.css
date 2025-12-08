@@ -419,3 +419,40 @@ footer {
   color: #c78c06;
   padding: 2rem 1rem;
 }
+
+/* ===== MOBILE HERO FIX ===== */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 1rem;          /* tighter padding like mockup */
+    background-position: center;
+  }
+
+  /* Dark overlay reduced width */
+  .hero::before {
+    background: rgba(34, 34, 34, 0.65);
+    width: 60%;                 /* only left side is shaded */
+    right: auto;                /* prevents full-width */
+  }
+
+  .hero-content {
+    width: 70%;                 /* narrower overlay panel */
+    padding: 1.5rem;            /* tighter spacing */
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-content .btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+}
