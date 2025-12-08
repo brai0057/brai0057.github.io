@@ -9,14 +9,17 @@ body {
 }
 
 /* STRUCTURE */
-header,
-main,
-footer {
+.container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
 }
+
+main {
+  padding: 0;
+}
+
 
 /* HEADER */
 header {
